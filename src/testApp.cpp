@@ -66,7 +66,7 @@ void testApp::setup(){
 	zCut1 = (zCut1 > 500) ? zCut1 : 500;
 	kinect.setDepthClipping(zCut1 - 500, zCut2 + 500);
 	kinect.setRegistration(true);
-	kinect.setCameraTiltAngle(5);
+	kinect.setCameraTiltAngle(angle);
 
 	kinWidth = kinect.getWidth();
 	kinHeight = kinect.getHeight();
@@ -144,6 +144,7 @@ void testApp::loadSettings(void) {
 	test = settings.getValue("settings:test", 0);
 	mirrorX = settings.getValue("settings:mirrorX", 0) == 0 ? false : true;
 	mirrorY = settings.getValue("settings:mirrorY", 1) == 0 ? false : true;
+	angle = settings.getValue("settings:angle", 5);
 }
 
 void testApp::fadeToColor(float r, float g, float b, float speed) {
@@ -182,6 +183,7 @@ void testApp::exit(){
 
 	ofSoundShutdown();
 
+	kinect.setCameraTiltAngle(0);
 	kinect.close();
 	kinect.clear();
 
@@ -1269,6 +1271,7 @@ void testApp::keyPressed(int key){
 	case 'R':
 		fluidSolver.reset();
 		loadSettings();
+		kinect.setCameraTiltAngle(angle);
 		nextInt = ofGetElapsedTimeMillis();
 		ifx = 0;
 		break;

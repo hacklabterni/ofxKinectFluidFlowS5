@@ -62,6 +62,7 @@ class testApp : public ofBaseApp {
     ofPixels depthPix, videoPix;
     ofMesh kinMesh;
     int step, zCut1, zCut2, ifx, dMax;
+    int angle;
     int kinWidth, kinHeight;
     bool canDraw, bUsers, bBlobs, bFlow;
     bool point, wire, ball;
