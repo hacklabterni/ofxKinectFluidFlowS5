@@ -1,11 +1,11 @@
-ofxMSAFluid
-ofxMSACore
-ofxMSAInteractiveObject
-ofxSimpleGuiToo
-ofxXmlSettings
-ofxTuio
-ofxOsc
 ofxKinect
-ofxOpenCv
-ofxPostProcessing
+ofxOsc
+ofxXmlSettings
+vendor/ofxMSACore
+vendor/ofxMSAFluid
+vendor/ofxMSAInteractiveObject
+vendor/ofxOpenCv
+vendor/ofxPostProcessing
+vendor/ofxSimpleGuiToo
+vendor/ofxTuio
 

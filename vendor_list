@@ -1,0 +1,13 @@
+#
+# This file is used by install_dependencies.sh
+# Add yuor dependencies in this format:
+#
+# vendor|project|version
+#
+https://github.com/hacklabterni|ofxMSAFluid|0.9.8-0.0.1
+https://github.com/hacklabterni|ofxMSACore|0.9.8-0.0.1
+https://github.com/hacklabterni|ofxMSAInteractiveObject|0.9.8-0.0.1
+https://github.com/hacklabterni|ofxTuio|0.9.8-0.0.1
+https://github.com/hacklabterni|ofxPostProcessing|0.9.8-0.0.1
+https://github.com/hacklabterni|ofxSimpleGuiToo|0.9.8-0.0.1
+https://github.com/hacklabterni|ofxOpenCv|0.9.8-0.0.1

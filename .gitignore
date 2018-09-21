@@ -1,0 +1,6 @@
+/obj
+/vendor
+
+!/bin
+/bin/*
+!/bin/data
